@@ -1,0 +1,6 @@
+MNIST/*
+data/*
+*.zip
+*.pyc
+mlruns/*
+*.ipynb
