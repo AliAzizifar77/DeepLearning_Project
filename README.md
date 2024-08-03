@@ -1,6 +1,7 @@
 # Mutual Information for Disentangling Representations
 
 **DSprites Dataset:**
+
 The DSprites dataset consists of 2D binary images of shapes generated from five ground truth latent factors: shape (3 types), scale (6 levels), orientation (40 angles), position X (32 values), and position Y (32 values). It contains 737,280 unique images created by varying these factors. The dataset is primarily used for evaluating the disentanglement of latent factors in unsupervised learning models.
 
 ## Installation
@@ -68,3 +69,8 @@ board:
 * share_train : Train shared encoders using the **sdim_runner.sh** configuration.
 * exclusive_train : Train the exclusive encoders using the **edim_runner.sh** configuration.
 * board : Launch the mlflow monitoring windows on localhost.
+
+**Conclusion:**
+
+This repository provides the code and scripts to train and evaluate shared and exclusive representations using mutual information estimation on the DSprites dataset. The proposed models' performance metrics are provided for comparison against ideal values, highlighting areas for potential improvement.
+
