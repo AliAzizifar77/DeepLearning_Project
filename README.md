@@ -1,21 +1,7 @@
-# Learning Disentangled Representations via Mutual Information Estimation
+# Mutual Information for Disentangling Representations
 
-**Pytorch** Implementation of **Learning Disentangled Representations via Mutual Information Estimation** ([arxiv link](https://arxiv.org/abs/1912.03915)) by Eduardo Hugo Sanchez *et al.*
-
-The implementation is done in pytorch on the **colored-mnist dataset**.
-<p align="center">
-<img  src="https://github.com/MehdiZouitine/spaghetti/blob/master/images/pair.png?raw=true" alt="Cmnist">
-</p>
-
-
-
-The training is divided into two stages : 
-* First, the shared representation is learned via cross mutual information estimation and maximization.
-* Secondly, mutual information maximization is performed to learn the exclusive representation while minimizing the mutual information between the shared and exclusive representations (using an adversarial objective).
-
-<p align="center">
-<img  src="https://github.com/MehdiZouitine/spaghetti/blob/master/images/disen.PNG?raw=true" alt="Pipeline">
-</p>
+**DSprites Dataset:**
+The DSprites dataset consists of 2D binary images of shapes generated from five ground truth latent factors: shape (3 types), scale (6 levels), orientation (40 angles), position X (32 values), and position Y (32 values). It contains 737,280 unique images created by varying these factors. The dataset is primarily used for evaluating the disentanglement of latent factors in unsupervised learning models.
 
 ## Installation
 ```
